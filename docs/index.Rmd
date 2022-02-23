@@ -1,0 +1,33 @@
+---
+title: "Prison Trends through Gender & Race"
+author: "Emily Olshan"
+date: "2/22/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+#library("knitr")
+```
+
+## Problem Domain & Focus Areas
+
+```{r, echo = FALSE, include = FALSE, message = FALSE}
+source("../source/analysis.R")
+```
+
+This report focuses on examining the inequality that occurs in the American prison system. More specifically, I am choosing to focus on how race and gender both play a factor in who is imprisoned and who is let go free. I am interested to see the disparities between imprisonment rates among people of different races and the disparity between female and male imprisonment rates. Furthermore, I think it would be interesting to then investigate if gender or race is the more disproportionate variable when it comes to imprisonment inequality. To begin, the total female jail population in 2014 was `r total_female_pop_2014` while in 2004 it was `r total_female_pop_2004`. Conversely, the total male jail population in 2014 was `r total_male_pop_2014` while in 2004 it was `r total_male_pop_2004`. From these numbers, we can draw a number of conclusions. Firstly, the numbers of incarceration have increased for both men and women over the past 10 years. Second, men are consistently incarcerated more often than women. I also compared totals across races for each state in 2015. The state that had the highest Asian American/Pacific Islander prison population was `r aapi_2015`, the state with the highest black prison population was `r black_2015`, the state with the highest latinx prison population was `r latinx_2015`, the state with the highest native prison population was `r native_2015`, and the state with the highest white prison population was `r white_2015`. 
+
+```{r echo = FALSE, include = FALSE}
+source("../source/line_chart.R")
+```
+
+## Line Chart 
+
+```{r echo = FALSE, message = FALSE}
+plot(line_chart)
+```
+
+
+
+
