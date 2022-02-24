@@ -8,9 +8,9 @@ over_time <- prison_trends %>%
   select(year, white_prison_pop, black_prison_pop, aapi_prison_pop,
          native_prison_pop, other_race_prison_pop, latinx_prison_pop) %>%
   filter(year == 1984 | year == 1994 | year == 2004 | year == 2014) %>%
-  group_by(year) %>%
-  summarize_all(~sum(white_prison_pop, black_prison_pop, aapi_prison_pop,
-                     native_prison_pop, other_race_prison_pop, latinx_prison_pop, na.rm = T)) 
+  group_by(year)  %>%
+  summarize(across(white_prison_pop:latinx_prison_pop, sum, na.rm = T))
+
 
 race_totals <- cbind(over_time[1], stack(over_time[2:7])) %>%
   rename(race = ind)
