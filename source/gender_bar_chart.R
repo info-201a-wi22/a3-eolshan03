@@ -28,5 +28,6 @@ gender_bar <- ggplot(gender_totals) +
                              "aapi_female_prison_pop", "native_female_prison_pop",
                              "latinx_female_prison_pop", "other_race_female_prison_pop")) +
   ylab("Prison Population") +
-  labs(title = "Prison Population in 2014\n by Race and Gender")
+  labs(title = "Prison Population in 2014\n by Race and Gender") +
+  scale_fill_manual(values = c("seagreen4", "magenta4"))
 

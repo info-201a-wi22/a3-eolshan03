@@ -25,4 +25,4 @@ line_chart <- ggplot(race_totals, aes(x = year, y = values, group = race)) +
                              "Asian American/\nPacific Islander", 
                              "Native", "Other/Mixed", "Latinx"))
 
-
+#change tick marks and change color of native

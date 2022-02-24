@@ -38,3 +38,4 @@ cali_map <- ggplot(cali_per) +
   blank_theme +
   labs(title = "Percentage of Black Incarcerated \n Individuals in CA in 2014") 
 
+#make interactive?
