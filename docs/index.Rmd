@@ -37,3 +37,15 @@ source("../source/cali_map.R")
 ```{r echo = FALSE, message = FALSE}
 plot(cali_map)
 ```
+
+
+```{r echo = FALSE, include = FALSE}
+source("../source/gender_bar_chart.R")
+```
+
+## Bar Chart
+
+```{r echo = FALSE, message = FALSE}
+plot(gender_bar)
+```
+
