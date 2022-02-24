@@ -28,6 +28,12 @@ source("../source/line_chart.R")
 plot(line_chart)
 ```
 
+```{r echo = FALSE, include = FALSE}
+source("../source/cali_map.R")
+```
 
+## Map of California
 
-
+```{r echo = FALSE, message = FALSE}
+plot(cali_map)
+```
