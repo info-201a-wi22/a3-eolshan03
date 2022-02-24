@@ -28,6 +28,8 @@ source("../source/line_chart.R")
 plot(line_chart)
 ```
 
+I chose to create this line chart to show the disparities over time among the totals of the prison populations for different races. I chose a line chart because I wanted to represent how these totals changed over time, more specifically every 10 years, from 1984 to 2014. The chart clearly shows that while Asian American/Pacific Islanders, Other/Mixed, and Native Americans have maintained relatively low and stable prison populations over time, the other groups have not. The chart shows a steep jump in Black incarceration between 1984 and 1994, although it continues to rise steadily over time. Also, although the white incarcerated population has steadily increased, it is consistently below the total Black prison population, which correlates with how the justice system systematically targets black individuals rather than white individuals. 
+
 ```{r echo = FALSE, include = FALSE}
 source("../source/cali_map.R")
 ```
@@ -38,6 +40,7 @@ source("../source/cali_map.R")
 plot(cali_map)
 ```
 
+I chose to create this map because I wanted to show how the percentages of black incarcerated individuals compared to the total prison population for each county in California. From my map I can see that there might be some limitations due to some missing data, but it still reveals an insightful picture of the makeup of California's prison system. For example, from the map I can see that Northern/Central California has prisons with a more disproportionate number of Black incarcerated individuals. I can also see that some regions in Southern California are also leaning towards unequal numbers as well. This tells me that these specific counties in California may be targeting Black individuals and/or sentencing them at higher rates than other races, more specifically white individuals. 
 
 ```{r echo = FALSE, include = FALSE}
 source("../source/gender_bar_chart.R")
@@ -49,3 +52,4 @@ source("../source/gender_bar_chart.R")
 plot(gender_bar)
 ```
 
+I chose to create this bar chart because I wanted to show not only the disparities among races, but also the disparities between gender. One limitation might be that the data set does not include non-binary individuals, but the bar chart still paints a representative picture of these disparities. From the bar chart, I can clearly see that men are incarcerated at a much higher rate than women. I can also see that white women are incarcerated more than black women, but black men are incarcerated more than white men. Latino men are also incarcerated at a surprisingly high rate and at a significantly higher rate than Latina women. From this chart I can draw the conclusion that the justice system continues to target men of color and incarcerates them at a higher rate than white individuals.
