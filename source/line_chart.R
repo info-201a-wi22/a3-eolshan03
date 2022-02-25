@@ -18,11 +18,10 @@ race_totals <- cbind(over_time[1], stack(over_time[2:7])) %>%
 line_chart <- ggplot(race_totals, aes(x = year, y = values, group = race)) +
   geom_line(aes(color = race)) + 
   geom_point(aes(color = race), size = 1) +
-  labs(title = "Prison Population over Time \n based on Race", fill = "Race") +
+  labs(title = "Prison Population over Time \n based on Race") +
   ylab("Prison Population") +
   xlab("Year") +
-  scale_color_hue(labels = c("White", "Black", 
+  scale_color_hue("Race", labels = c("White", "Black", 
                              "Asian American/\nPacific Islander", 
-                             "Native", "Other/Mixed", "Latinx"))
+                             "Native", "Other/Mixed", "Latinx")) 
 
-#change tick marks and change color of native

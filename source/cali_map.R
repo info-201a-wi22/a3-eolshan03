@@ -3,6 +3,7 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 library("stringr")
+library("plotly")
 
 prison_trends <- read.csv("https://raw.githubusercontent.com/vera-institute/incarceration-trends/master/incarceration_trends.csv", stringsAsFactors = F)
 
@@ -38,4 +39,4 @@ cali_map <- ggplot(cali_per) +
   blank_theme +
   labs(title = "Percentage of Black Incarcerated \n Individuals in CA in 2014") 
 
-#make interactive?
+
