@@ -39,7 +39,7 @@ source("../source/cali_map.R")
 ```{r echo = FALSE, message = FALSE}
 plot(cali_map)
 ```
-
+xx
 I chose to create this map because I wanted to show how the percentages of black incarcerated individuals compared to the total prison population for each county in California. From my map I can see that there might be some limitations due to some missing data, but it still reveals an insightful picture of the makeup of California's prison system. For example, from the map I can see that Northern/Central California has prisons with a more disproportionate number of Black incarcerated individuals. I can also see that some regions in Southern California are also leaning towards unequal numbers as well. This tells me that these specific counties in California may be targeting Black individuals and/or sentencing them at higher rates than other races, more specifically white individuals. 
 
 ```{r echo = FALSE, include = FALSE}
